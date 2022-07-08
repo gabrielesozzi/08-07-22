@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.aranzulla.it/wp-content/contenuti/2020/02/Libri1-1200x628.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #007dbc;
+}
+
+.bookApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.bookCard {
+  height: 520px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.bookCard:hover {
+  transform: scale(1.04);
+  transition: 0.35s;
+}
+
+.bookCard img {
+  width: 100%;
+}
+
+.searchButton {
+  padding: 8px;
+  background-color: #007dbc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: bold;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+  transition: 0.35s;
+}
+
+input {
+  margin-right: 20px;
+  height: 32px;
+}
+
+.errorText {
+  color: #007dbc;
+  font-weight: bolder;
+  font-size: 30px;
+}
